@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginPageFragment">
+
+    <TextView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Log in or sign up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/head"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:hint="Mail adress"
+        android:textColorHint="#D8D6D6"
+        android:paddingStart="10dp"
+        android:id="@+id/edittext"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        android:background="@drawable/edittextshape"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:hint="Password"
+        android:textColorHint="#D8D6D6"
+        android:paddingStart="10dp"
+        android:inputType="textPassword"
+        android:id="@+id/edittext2"
+        app:layout_constraintTop_toBottomOf="@id/edittext"
+        android:background="@drawable/edittextshape"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/next"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/edittext2"
+        android:background="@drawable/ilerishapepaddingaz"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#D8D6D6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/next"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toStartOf="@id/or"
+        app:layout_constraintWidth_percent="0.35"
+        android:id="@+id/leftdivider"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#D8D6D6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/next"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toEndOf="@id/or"
+        app:layout_constraintWidth_percent="0.35"
+        android:id="@+id/rightdivider"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:id="@+id/or"
+        android:textColor="#D8D6D6"
+        app:layout_constraintStart_toEndOf="@id/leftdivider"
+        app:layout_constraintTop_toBottomOf="@id/next"
+        app:layout_constraintEnd_toStartOf="@id/rightdivider"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/register"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/or"
+        android:background="@drawable/ilerishapepaddingaz"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
