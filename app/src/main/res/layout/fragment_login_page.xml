@@ -93,10 +93,11 @@
         android:text="Or"
         android:id="@+id/or"
         android:textColor="#D8D6D6"
+        android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@id/leftdivider"
         app:layout_constraintTop_toBottomOf="@id/next"
         app:layout_constraintEnd_toStartOf="@id/rightdivider"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="57dp"/>
 
     <Button
         android:layout_width="0dp"

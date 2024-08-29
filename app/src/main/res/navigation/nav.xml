@@ -26,5 +26,39 @@
         android:id="@+id/homepageFragment"
         android:name="com.example.stocktracker.HomepageFragment"
         android:label="fragment_homepage"
-        tools:layout="@layout/fragment_homepage" />
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepageFragment_to_wareHouse"
+            app:destination="@id/wareHouse" />
+        <action
+            android:id="@+id/action_homepageFragment_to_stockStatus"
+            app:destination="@id/stockStatus" />
+    </fragment>
+    <fragment
+        android:id="@+id/wareHouse"
+        android:name="com.example.stocktracker.WareHouse"
+        android:label="fragment_ware_house"
+        tools:layout="@layout/fragment_ware_house" >
+        <action
+            android:id="@+id/action_wareHouse_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+        <action
+            android:id="@+id/action_wareHouse_to_stockStatus"
+            app:destination="@id/stockStatus" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockStatus"
+        android:name="com.example.stocktracker.StockStatus"
+        android:label="fragment_stock_status"
+        tools:layout="@layout/fragment_stock_status" >
+        <action
+            android:id="@+id/action_stockStatus_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+        <action
+            android:id="@+id/action_stockStatus_to_wareHouse"
+            app:destination="@id/wareHouse" />
+        <action
+            android:id="@+id/action_stockStatus_self"
+            app:destination="@id/stockStatus" />
+    </fragment>
 </navigation>

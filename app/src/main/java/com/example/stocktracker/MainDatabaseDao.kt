@@ -25,6 +25,8 @@ class MainDatabaseDao {
         return list
     }
 
+
+
     fun LastData(vt:MainDatabase):ArrayList<PersonalInformation>{
         var db=vt.writableDatabase
         var list=ArrayList<PersonalInformation>()
